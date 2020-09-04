@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="Stylesheet" href="css/Stylesheet.css">
+    <script src="../js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    <nav id='scrolling'>
+            
+            <label id="logo">Samarth Dubey</label>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn"><i class="fas fa-bars"></i>
+            </label>
+            <ul class="navigation" id ='scrolling'>
+                <li><a href="#"  >Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Achivments</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+    
+    </nav>
+  
+    <script>
+        var  nav = document.getElementById('scrolling');
+        
+      window.onscroll = function(){
+
+      	if (window.pageYOffset >200) {
+
+              nav.style.background = "white";
+              nav.style.color="black";
+              nav.style.boxShadow = "0px 4px 2px grey";
+          
+      
+      	}
+      	else{
+      		nav.style.background = "transparent";
+          nav.style.color="black";
+          nav.style.boxShadow = "none";
+         
+      	}
+      }
+    </script>
+    </div>
+    <div class="main-2">
+     
+      <div class='type' >
+      <p id="demo"></p>
+       <p class="auto-input"></p>
+      </div>
+      <script src="./js/script.js"></script>
+      <Script>
+      var typed = new Typed(".auto-input", {
+      strings: ['My name is Samarth.', 'nice to see you on my portfolio.'],
+      typeSpeed: 150,
+      backspeed: 50,
+        loop:true
+      });
+      </Script>
+    </div>
+
+    <div class="main-1 box" >
+        <h1>Fixed Top Menu</h1>
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+      
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        
+      </div>
+      <div class="main-2 box">
+         <h2 id="asai">Site under construction</h2>
+      </div>
+      <div class="main-3 box" id="about">
+        <h1>Fixed Top Menu</h1>
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+      
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        
+      </div>
+      
+      
+    
+</body>
+</html>
