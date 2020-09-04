@@ -9,56 +9,62 @@
     <title>Document</title>
 </head>
 <body>
-   
+  <div>
     <nav id='scrolling'>
             
             <label id="logo">Samarth Dubey</label>
             <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-            <i class="fas fa-bars"></i>
+            <label for="click" class="menu-btn"><i class="fas fa-bars"></i>
             </label>
             <ul class="navigation" id ='scrolling'>
-                <li><a href="#logo" class="red" >Home</a></li>
+                <li><a href="#"  >Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#">Achivments</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             
-    </nav>
     
+    </nav>
+  
     <script>
         var  nav = document.getElementById('scrolling');
-        var  a  = document.getElementById("ab");
+        
       window.onscroll = function(){
 
-      	if (window.pageYOffset >300) {
+      	if (window.pageYOffset >200) {
 
               nav.style.background = "white";
-          nav.style.boxShadow = "0px 4px 2px white";
+              nav.style.color="black";
+              nav.style.boxShadow = "0px 4px 2px grey";
+          
       
       	}
       	else{
       		nav.style.background = "transparent";
+          nav.style.color="black";
           nav.style.boxShadow = "none";
          
       	}
       }
     </script>
-    <header >
-    <div class='type' >
+    </div>
+    <div class="main-2">
+     
+      <div class='type' >
       <p id="demo"></p>
        <p class="auto-input"></p>
-    </div>
-    <script src="./js/script.js"></script>
-    <Script>
+      </div>
+      <script src="./js/script.js"></script>
+      <Script>
       var typed = new Typed(".auto-input", {
-      strings: ['My name is Samarth.', 'nice to see you on my portfolio.s'],
+      strings: ['My name is Samarth.', 'nice to see you on my portfolio.'],
       typeSpeed: 150,
       backspeed: 50,
         loop:true
       });
-    </Script>
-    </header>
+      </Script>
+    </div>
+
     <div class="main-1 box" >
         <h1>Fixed Top Menu</h1>
         <h2>Scroll this page to see the effect</h2>
@@ -76,7 +82,7 @@
         
       </div>
       <div class="main-2 box">
-          hiii
+         <h2 id="asai">Site under construction</h2>
       </div>
       <div class="main-3 box" id="about">
         <h1>Fixed Top Menu</h1>
